@@ -1,0 +1,19 @@
+#submit {
+  background-color: #ffffff;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  margin-top: 1.5em;
+}
+
+#submit:hover {
+  background-color: #b37b13;
+}
+
+#submit:active {
+  background-color: #e29a14;
+}
