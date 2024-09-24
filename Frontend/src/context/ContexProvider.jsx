@@ -45,10 +45,8 @@ export const ContextProvider = ({ children }) => {
 
   const setUserToken = (token) => {
     if (token) {
-      // const encryptedToken = encryptToken(token);
-      const encryptedToken = token;
-      localStorage.setItem('TOKEN', encryptedToken);
-      _setUserToken(encryptedToken);
+      localStorage.setItem('TOKEN', token);
+      _setUserToken(token);
     } else {
       localStorage.removeItem('TOKEN');
       _setUserToken(null);

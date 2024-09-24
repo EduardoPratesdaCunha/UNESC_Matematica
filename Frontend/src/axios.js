@@ -11,9 +11,14 @@ const axiosClient = axios.create({
 });
 
 axiosClient.interceptors.request.use((config) => {
-  config.headers.Authorization = `Bearer ${localStorage.getItem('TOKEN')}`
-  return config
+  const token = localStorage.getItem('TOKEN');
+  if (token) {
+    console.log('Authorization => ', config.headers.Authorization)
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
 });
+
 axiosClient.interceptors.response.use(response => {
   return response;
 }, error => {

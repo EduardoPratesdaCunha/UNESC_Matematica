@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
       'id' => Str::uuid(),
       'name' => 'admin',
       'email' => 'admin@email.com',
-      'cpf' => '047.665.460-24',
+      'cpf' => '000.111.222-33',
       'password' => Hash::make('12341234'),
     ]);
   }
