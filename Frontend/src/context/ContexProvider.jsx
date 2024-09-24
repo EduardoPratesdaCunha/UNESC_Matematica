@@ -26,7 +26,6 @@ export const ContextProvider = ({ children }) => {
   const [currentUser, _setCurrentUser] = useState(decryptData(localStorage.getItem('USER')) || null);
   const [userToken, _setUserToken] = useState(localStorage.getItem('TOKEN') || null);
 
-
   const setCurrentUser = (user) => {
     if (user) {
       const sanitizedUser = {
@@ -44,6 +43,7 @@ export const ContextProvider = ({ children }) => {
   }
 
   const setUserToken = (token) => {
+    console.log('token => ', token)
     if (token) {
       localStorage.setItem('TOKEN', token);
       _setUserToken(token);

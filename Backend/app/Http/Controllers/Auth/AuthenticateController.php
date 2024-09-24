@@ -33,10 +33,6 @@ class AuthenticateController extends Controller
       return response()->json(['error' => 'Login Invalido'], 422);
     }
   }
-  public function me()
-  {
-    return response()->json(auth('api')->user());
-  }
 
   public function logout()
   {
@@ -45,15 +41,11 @@ class AuthenticateController extends Controller
     return response()->json(['message' => 'Successfully logged out']);
   }
 
-  public function refresh()
-  {
-    return $this->respondWithToken(JWTAuth::refresh(), Auth::user());
-  }
 
   protected function respondWithToken($token, $user)
   {
     return response()->json([
-      'access_token' => $token,
+      'token' => $token,
       'token_type' => 'bearer',
       'expires_in' => null,
       'user' => $user,
