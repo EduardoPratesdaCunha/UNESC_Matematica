@@ -17,6 +17,13 @@ form input {
   padding: 4px;
 }
 .container--buttons {
-  display: flex;
-  flex-direction: column;
+  background-color: rgb(24, 24, 37);
+  padding: 32px 16px;
 }
+.login__btn {
+  padding: 08px;
+  color: black;
+  text-decoration-color: black;
+  font-weight: bold;
+}
+

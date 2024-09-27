@@ -9,7 +9,7 @@ header {
 header h1 {
   background-color: #df9a19;
   color: black;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav a {
   border-radius: 10px;
   background-color: #df9a19;
   color: black;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 nav a:hover {

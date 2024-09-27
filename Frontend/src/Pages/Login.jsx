@@ -48,13 +48,13 @@ export default function Login () {
           <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} placeholder='Digite seu CPF' />
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Digite sua Senha' />
           <div>
-            <button id="submit" type="submit">Logar</button>
+            <TButton className="login__btn">Logar</TButton>
           </div>
         </form>
 
         <div className="container--buttons">
           <TButton className="login__btn" to="/register">Registrar-se</TButton>
-          <TButton className="login__btn" id="btnBack" to="/">Voltar</TButton>
+          <TButton onClick={onSubmit} className="login__btn" id="btnBack" to="/">Voltar</TButton>
         </div>
       </div>
     </>
