@@ -3,7 +3,6 @@ import { useStateContext } from "../../context/ContexProvider";
 import TButton from "../core/TButton";
 import axiosClient from '../../axios';
 import "./style.css"
-import { Navigate } from "react-router-dom";
 
 const AuthHeader = () => {
   const { setCurrentUser, setUserToken } = useStateContext();
@@ -35,9 +34,7 @@ const AuthHeader = () => {
           <li><TButton to="/simulate/create">Nova Simulação</TButton></li>
         </ul>
         <form className="form--logout" onClick={Logout}>
-          <button className="submit" type="submit">
-            Logout
-          </button>
+          <TButton>Logout</TButton>
         </form>
       </header>
 

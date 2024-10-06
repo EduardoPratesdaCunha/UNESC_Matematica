@@ -10,7 +10,7 @@ export default function HomeHeader () {
 
         <nav>
           <TButton to="/login">Login</TButton>
-          <TButton to="#">Registre-se</TButton>
+          <TButton to="/register">Registrar</TButton>
         </nav>
 
       </header>

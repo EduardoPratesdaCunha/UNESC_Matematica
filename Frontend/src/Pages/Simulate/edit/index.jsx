@@ -79,8 +79,9 @@ export default function Edit () {
             result={result}
             setResult={setResult}
           />
-
-          <button type="submit" id="submit">Salvar</button>
+          <div className="submit">
+            <button type="submit" id="submit">Salvar</button>
+          </div>
         </form>
      </div>
     </>

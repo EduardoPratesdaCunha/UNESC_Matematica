@@ -11,7 +11,7 @@ export default function Index () {
   const [result, setResult] = useState([]);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
-  const num = 0;
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await axiosClient.get('simulate/index');

@@ -6,7 +6,7 @@ function valueFormat($value)
     return 'R$ 0,00';
   }
 
-  return 'R$ ' . number_format($value, 2, '.', ',');
+  return 'R$ ' . number_format($value, 2, ',', '.');
 }
 
 function rateFormat($value)
@@ -15,5 +15,5 @@ function rateFormat($value)
     return 'R$ 0,00';
   }
 
-  return number_format($value, 5, '.', ',') . '%';
+  return number_format($value, 0, ',', '.') . '%';
 }

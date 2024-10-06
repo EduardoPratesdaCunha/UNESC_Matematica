@@ -1,5 +1,12 @@
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+}
 #submit {
   background-color: #ffffff;
+  max-width: 25%;
   color: black;
   padding: 12px 20px;
   border-radius: 8px;
